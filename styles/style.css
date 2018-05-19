@@ -70,14 +70,9 @@ body {
 }
 
 .logo {
-  color: white;
   border-radius: 50%;
   background-color: #7cc576;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
+  padding: 7px 8px;
   margin: 4px;
 }
 
