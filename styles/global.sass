@@ -1,0 +1,15 @@
+body
+  margin: 0
+  padding: 0
+
+.container
+  width: 100%
+  margin: 0 auto
+  padding: 0 $container-padding
+  box-sizing: border-box
+  +breakpoint(tablet)
+    max-width: $screen-sm-min
+  +breakpoint(desktop)
+    max-width: $screen-md-min
+  +breakpoint(wide-desktop, $container-max-width)
+    max-width: $screen-lg-min
