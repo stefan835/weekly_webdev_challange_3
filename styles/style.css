@@ -422,4 +422,48 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.5px;
 }
 
+.clients-section {
+  padding: 100px 0 60px;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  text-align: center;
+  color: #777777;
+  margin: 20px auto 40px;
+}
+
+.client:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.client__img {
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  height: 200px;
+  flex: 0.25;
+}
+
+.client__content {
+  background-color: #f9f9f9;
+  padding: 40px 45px;
+  flex: 0.75;
+  margin: 0 40px;
+}
+
+.client__comment {
+  margin: 0;
+}
+
+.client__signature {
+  font-size: 18px;
+  line-height: 2;
+  color: #7cc576;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
