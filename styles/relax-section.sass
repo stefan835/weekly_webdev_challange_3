@@ -1,24 +1,24 @@
 .relax-section
   background-color: $gray-lighter
-
-.relax-container
   display: flex
+
+.relax
+  display: flex
+  background: url("../media/see_imgae.jpg")
+  background-size: cover
+  flex: 0.7
 
 .gear
   flex: 0.3
-  min-width: 200px
-  height: 400px
   background: url("../media/gear.svg") no-repeat
   background:
-    position: center left
-  padding: 100px 0
+    position: center right
 
 .relax__overlay
-  background: url("../media/see_imgae.jpg")
-  background-size: cover
-
-.relax
   background-color: rgba(0, 0, 0, 0.75)
+  width: 100%
+
+.relax-container
   padding: 100px 40px 100px 100px
   display: flex
   flex-direction: column
@@ -28,6 +28,7 @@
     family: "Roboto Slab", serif
   letter-spacing: -0.4px
   color: $almost-white
+  margin-left: 0
 
 .relax__headline
   color: white
