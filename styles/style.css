@@ -119,6 +119,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
 }
 
+.headline {
+  margin-bottom: 70px;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: #777777;
+}
+
+.headline__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  letter-spacing: -2px;
+  color: #222222;
+}
+
 .hero-section {
   background: url("../media/hero_image.jpg");
   background-size: cover;
@@ -157,19 +173,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 90px 0 84px;
   text-align: center;
   color: #777777;
-}
-
-.services-section__headline {
-  margin-bottom: 70px;
-}
-
-.services-section__title {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  letter-spacing: -2px;
-  color: #222222;
 }
 
 .services {
@@ -214,11 +217,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   background: url("../media/see_imgae.jpg");
   background-size: cover;
-  flex: 0.7;
+  flex: 0.65;
 }
 
 .gear {
-  flex: 0.3;
+  flex: 0.35;
   background: url("../media/gear.svg") no-repeat;
   background-position: center right;
 }
@@ -229,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .relax-container {
-  padding: 100px 40px 100px 100px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -268,6 +271,92 @@ h1, h2, h3, h4, h5, h6 {
   padding: 13px 50px;
   background: url("../media/Checkmark.svg") no-repeat;
   background-position: left center;
+}
+
+.project-section {
+  padding: 100px 0;
+}
+
+.project-section__content {
+  display: flex;
+  background: url("../media/isometric_iPad_Air.png") no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.project-container {
+  display: flex;
+}
+
+.project-container__image {
+  display: flex;
+  flex: 0.5;
+  order: 1;
+}
+
+.project {
+  display: flex;
+  flex: 0.5;
+  flex-direction: column;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: -0.4px;
+  color: #777777;
+}
+
+.project__title {
+  margin: 8px 0;
+  color: #222222;
+}
+
+.project__list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  margin: 12px 0 0 0;
+}
+
+.project__list-item {
+  padding: 25px 0 25px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-item__title {
+  margin: 0;
+  text-transform: none;
+  color: #222222;
+}
+
+.list-item__content {
+  margin: 0;
+}
+
+.project__list-item--e-commerce {
+  background: url("../media/baseket_icon.png") no-repeat;
+  background-position: left center;
+}
+
+.project__list-item--seo {
+  background: url("../media/seo_icon.png") no-repeat;
+  background-position: left center;
+}
+
+.project__list-item--encryption {
+  background: url("../media/secure_icon.png") no-repeat;
+  background-position: left center;
+}
+
+.project__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #7cc576;
+  text-transform: uppercase;
+}
+
+.project__link:hover {
+  color: #5ab652;
 }
 
 /*# sourceMappingURL=style.css.map */
