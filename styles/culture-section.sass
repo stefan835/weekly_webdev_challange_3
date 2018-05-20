@@ -1,0 +1,55 @@
+.culture-section
+  font-family: "Roboto Slab", serif
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 90px 0 84px
+  text-align: center
+  color: $gray-light
+  background-color: $gray-lightest
+
+.culture
+  display: flex
+  justify-content: space-around
+
+.culture__item
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-size: 14px
+  letter-spacing: -0.4px
+
+.culture__item:nth-child(2)
+  margin: auto 56px
+  position: relative
+  &:before
+    position: absolute
+    left: -113px
+    top: 43px
+    content: ""
+    width: 170px
+    height: 3px
+    background-color: $gray-light
+  &:after
+    position: absolute
+    right: -113px
+    top: 43px
+    content: ""
+    width: 170px
+    height: 3px
+    background-color: $gray-light
+
+.culture__image
+  height: 50px
+
+.culture__title
+  font:
+    family: "Montserrat", sans-serif
+    weight: $bold
+    size: 18px
+  text-transform: uppercase
+  color: $gray-base
+  margin: 40px 0 0
+  letter-spacing: -0.5px
