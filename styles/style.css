@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -197,6 +198,70 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   margin: 40px 0 0;
   letter-spacing: -0.5px;
+}
+
+.relax-section {
+  background-color: #e9e9e9;
+}
+
+.relax-container {
+  display: flex;
+}
+
+.gear {
+  flex: 0.3;
+  min-width: 200px;
+  height: 400px;
+  background: url("../media/gear.svg") no-repeat;
+  background-position: center left;
+  padding: 100px 0;
+}
+
+.relax__overlay {
+  background: url("../media/see_imgae.jpg");
+  background-size: cover;
+}
+
+.relax {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 100px 40px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: -0.4px;
+  color: #cccccc;
+}
+
+.relax__headline {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.relax__headline--primary {
+  color: #7cc576;
+}
+
+.relax__description {
+  padding-right: 100px;
+}
+
+.relax__list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.relax__list-item {
+  padding: 13px 50px;
+  background: url("../media/Checkmark.svg") no-repeat;
+  background-position: left center;
 }
 
 /*# sourceMappingURL=style.css.map */
