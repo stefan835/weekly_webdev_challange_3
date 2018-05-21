@@ -13,8 +13,22 @@
 <header class="header">
     <div class="container">
         <nav class="nav-bar">
-            <div class="brand"><img class="logo" src="media/leaf.png" alt="logo"/>Treehouse</div>
+            <a href="#" class="brand"><img class="logo" src="media/leaf.png" alt="logo"/>Treehouse</a>
             <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="hamburger-nav">
+            <a href="#" class="brand brand--mobile"><img class="logo" src="media/leaf.png" alt="logo"/>Treehouse</a>
+            <input type="checkbox" id="open-menu-input" class="menu-input-checkbox">
+            <label for="open-menu-input" class="menu-input-label">
+                <img class="menu-icon" src="media/menu.svg" alt="menu">
+            </label>
+            <ul class="menu--expanded">
                 <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
@@ -182,12 +196,12 @@
             <button class="btn--transparent">Contact Us</button>
         </div>
     </section>
-    <section class="partners-section container">
+    <div class="partners-section container">
         <img src="media/Envato.png" alt="Envato">
         <img src="media/WordPress.png" alt="WordPress">
         <img src="media/Tuts+.png" alt="Tuts+">
         <img src="media/Microlancer_copy.png" alt="Microlancer">
-    </section>
+    </div>
 </main>
 <footer class="footer">
     <div class="footer-wide">
