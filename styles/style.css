@@ -196,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 20px;
 }
 .menu-input-checkbox:checked ~ .menu--expanded .menu__item {
   width: 100%;
@@ -222,19 +223,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .headline {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   font-family: "Roboto Slab", serif;
   text-align: center;
   color: #777777;
 }
+@media (min-width: 48em) {
+  .headline {
+    margin-bottom: 70px;
+  }
+}
 
 .headline__title {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 28px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   letter-spacing: -2px;
   color: #222222;
+}
+@media (min-width: 48em) {
+  .headline__title {
+    font-size: 40px;
+  }
 }
 
 .hero-section {
@@ -247,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-section__content {
-  padding: 120px 0;
+  padding: 70px 0;
   color: #cccccc;
   font-family: "Roboto Slab", serif;
   font-size: 20px;
@@ -255,10 +266,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.5px;
   font-weight: 300;
 }
+@media (min-width: 48em) {
+  .hero-section__content {
+    padding: 120px 0;
+  }
+}
 
 .hero-section__headline {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 1.08;
@@ -266,20 +282,36 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin: auto 40px;
 }
+@media (min-width: 48em) {
+  .hero-section__headline {
+    font-size: 60px;
+  }
+}
 
 .services-section {
   font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 90px 0 84px;
   text-align: center;
+  padding: 70px 40px;
   color: #777777;
+}
+@media (min-width: 48em) {
+  .services-section {
+    padding: 90px 15px 84px;
+  }
 }
 
 .services {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+}
+@media (min-width: 48em) {
+  .services {
+    flex-direction: row;
+  }
 }
 
 .services__item {
@@ -290,10 +322,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px;
   letter-spacing: -0.4px;
+  margin: 15px auto;
 }
-
-.services__item:nth-child(2) {
-  margin: auto 56px;
+@media (min-width: 48em) {
+  .services__item {
+    margin: 0;
+  }
+  .services__item:nth-child(2) {
+    margin: auto 56px;
+  }
 }
 
 .services__image {
@@ -304,10 +341,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  margin: 15px 0 0;
   text-transform: uppercase;
   color: #222222;
-  margin: 40px 0 0;
   letter-spacing: -0.5px;
+}
+@media (min-width: 48em) {
+  .services__title {
+    margin: 40px 0 0;
+  }
 }
 
 .relax-section {

@@ -6,7 +6,7 @@
   background-color: rgba(0, 0, 0, 0.75)
 
 .hero-section__content
-  padding: 120px 0
+  padding: 70px 0
   color: $almost-white
   font:
     family: 'Roboto Slab', serif
@@ -14,14 +14,19 @@
   text-align: center
   letter-spacing: -0.5px
   font-weight: $normal
+  +breakpoint(tablet)
+    padding: 120px 0
 
 .hero-section__headline
   color: white
   font:
-    size: 60px
+    size: 40px
     weight: $bold
     family: "Montserrat", sans-serif
   line-height: 1.08
   letter-spacing: -3px
   text-transform: uppercase
   margin: auto 40px
+  +breakpoint(tablet)
+    font-size: 60px
+
