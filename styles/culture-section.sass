@@ -10,7 +10,10 @@
 
 .culture
   display: flex
+  flex-direction: column
   justify-content: space-around
+  +breakpoint(tablet)
+    flex-direction: row
 
 .culture__item
   display: flex
@@ -22,24 +25,32 @@
   letter-spacing: -0.4px
 
 .culture__item:nth-child(2)
-  margin: auto 56px
   position: relative
-  &:before
-    position: absolute
-    left: -113px
-    top: 43px
-    content: ""
-    width: 170px
-    height: 3px
-    background-color: $gray-light
-  &:after
-    position: absolute
-    right: -113px
-    top: 43px
-    content: ""
-    width: 170px
-    height: 3px
-    background-color: $gray-light
+  +breakpoint(tablet)
+    margin: auto 56px
+    &:before
+      position: absolute
+      left: -80px
+      top: 43px
+      content: ""
+      width: 100px
+      height: 3px
+      background-color: $gray-light
+    &:after
+      position: absolute
+      right: -80px
+      top: 43px
+      content: ""
+      width: 100px
+      height: 3px
+      background-color: $gray-light
+  +breakpoint(desktop)
+    &:before
+      width: 170px
+      left: -113px
+    &:after
+      width: 170px
+      right: -113px
 
 .culture__image
   height: 50px

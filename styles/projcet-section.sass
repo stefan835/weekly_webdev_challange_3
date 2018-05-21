@@ -1,31 +1,45 @@
 .project-section
-  padding: 100px 0
+  padding: 70px 20px
+  +breakpoint(tablet)
+    padding: 100px 0
 
 .project-section__content
   display: flex
-  background: url("../media/isometric_iPad_Air.png") no-repeat
-  background-position: right
-  background-size: contain
+  text-align: justify
+  +breakpoint(tablet)
+    background: url("../media/isometric_iPad_Air.png") no-repeat
+    background-position: right
+    background-size: 50%
+    text-align: left
+  +breakpoint(desktop)
+    background-size: contain
 
 .project-container
   display: flex
 
 .project-container__image
-  display: flex
-  flex: 0.5
-  order: 1
+  display: none
+  +breakpoint(tablet)
+    flex: 0.5
+    display: flex
+    order: 1
 
 .project
   display: flex
-  flex: 0.5
   flex-direction: column
+  align-items: center
   font-family: "Roboto Slab", serif
   letter-spacing: -0.4px
   color: $gray-light
+  margin: auto
+  +breakpoint(tablet)
+    flex: 0.5
+    align-items: flex-start
 
 .project__title
   margin: 8px 0
   color: $gray-base
+  text-align: center
 
 .project__list
   list-style: none
@@ -43,19 +57,20 @@
   margin: 0
   text-transform: none
   color: $gray-base
+  text-align: left
 
 .list-item__content
   margin: 0
 
-.project__list-item--e-commerce
+.e-commerce
   background: url("../media/baseket_icon.png") no-repeat
   background-position: left center
 
-.project__list-item--seo
+.seo
   background: url("../media/seo_icon.png") no-repeat
   background-position: left center
 
-.project__list-item--encryption
+.encryption
   background: url("../media/secure_icon.png") no-repeat
   background-position: left center
 
