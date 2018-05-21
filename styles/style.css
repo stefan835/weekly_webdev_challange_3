@@ -541,4 +541,89 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 0;
 }
 
+.footer-wide {
+  background-color: #222222;
+  padding: 60px 0 20px;
+}
+
+.footer-wide-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wide__column {
+  flex: 0.33;
+}
+
+.column__title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.footer-wide__list {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: #ececec;
+  padding: 0;
+}
+
+.footer-wide__list-item {
+  list-style: none;
+  padding: 12px 15px 12px 40px;
+}
+
+.list-item__text {
+  margin: 0;
+}
+
+.location {
+  background: url("../media/location.png") no-repeat;
+  background-position: left 12px;
+}
+
+.phone {
+  background: url("../media/iPhone.png") no-repeat;
+  background-position: left center;
+}
+
+.e-mail {
+  background: url("../media/email.png") no-repeat;
+  background-position: left center;
+}
+
+.article {
+  background: url("../media/News_Icon.png") no-repeat;
+  background-position: left center;
+}
+
+.image {
+  background: url("../media/Photo_Icon.png") no-repeat;
+  background-position: left center;
+}
+
+.play {
+  background: url("../media/Media_Icon.png") no-repeat;
+  background-position: left center;
+}
+
+.tweet {
+  background: url("../media/Twitter_Icon.png") no-repeat;
+  background-position: left 12px;
+}
+
+.footer-wide__list-item--strong {
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-wide__list-item--subtext {
+  font-size: 12px;
+  font-style: italic;
+  margin: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
