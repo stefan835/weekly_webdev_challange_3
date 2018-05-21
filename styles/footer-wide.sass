@@ -5,9 +5,17 @@
 .footer-wide-container
   display: flex
   justify-content: space-between
+  flex-direction: column
+  +breakpoint(tablet)
+    flex-direction: row
 
 .footer-wide__column
-  flex: 0.33
+  max-width: 400px
+  margin: auto 0 auto 15%
+  +breakpoint(tablet)
+    max-width: none
+    flex: 0.33
+    margin: 0 auto
 
 .column__title
   color: white
