@@ -124,18 +124,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-bar {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
 }
-
-.menu {
-  display: none;
-}
 @media (min-width: 48em) {
-  .menu {
+  .nav-bar {
     display: flex;
   }
+}
+
+.menu {
+  display: flex;
 }
 
 .menu__item {
@@ -972,8 +972,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 48em) {
   .copyright {
     position: absolute;
-    left: 0;
+    left: 15px;
     margin: 0;
+    font-size: 12px;
+  }
+}
+@media (min-width: 62em) {
+  .copyright {
+    font-size: 14px;
   }
 }
 
