@@ -1,57 +1,75 @@
 .relax-section
   background-color: $gray-lighter
   display: flex
+  text-align: center
+  +breakpoint(tablet)
+    text-align: left
 
 .relax
+  flex: 1
   display: flex
   background: url("../media/see_imgae.jpg")
   background-size: cover
-  flex: 0.65
+  +breakpoint(tablet)
+    flex: 0.65
 
 .gear
+  display: none
   flex: 0.35
   background: url("../media/gear.svg") no-repeat
-  background:
-    position: center right
+  background-position: center right
+  +breakpoint(tablet)
+    display: flex
 
 .relax__overlay
   background-color: rgba(0, 0, 0, 0.75)
   width: 100%
 
 .relax-container
-  padding: 100px
+  padding: 40px
   display: flex
   flex-direction: column
-  align-items: flex-start
+  align-items: center
   font:
     size: 16px
     family: "Roboto Slab", serif
   letter-spacing: -0.4px
   color: $almost-white
   margin-left: 0
+  +breakpoint(tablet)
+    padding: 100px
+    align-items: flex-start
 
 .relax__headline
   color: white
   font:
-    size: 40px
+    size: 28px
     weight: $bold
   letter-spacing: -2px
   margin: 0
   display: flex
   flex-direction: column
+  +breakpoint(tablet)
+    font-size: 40px
+
 
 .relax__headline--primary
   color: $brand-primary
 
 .relax__description
-  padding-right: 100px
+  +breakpoint(tablet)
+    padding-right: 100px
 
 .relax__list
   list-style: none
   padding: 0
   font-size: 16px
+  text-align: left
 
 .relax__list-item
-  padding: 13px 50px
+  padding: 13px 0 13px 50px
   background: url("../media/Checkmark.svg") no-repeat
   background-position: left center
+  +breakpoint(tablet)
+    margin-left: 0
+    padding: 13px 50px
